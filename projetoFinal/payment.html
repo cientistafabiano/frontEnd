@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="E-commerce">
+        <meta name="robots" content="index,follow">
+        <meta name="rating" content="general">
+        <link rel="icon" href="imagem\favicon.png">
+        <title>E-Commerce CodeBlue</title>
+        
+        <!-- icon do bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- icon hamburguer -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- nosso css -->
+        <link rel="stylesheet" href="payment.css"> 
+    </head>
+    <body>
+        <main>
+            <section class="topo container"> <!-- vô -->
+                <!-- logo -->
+                <figure>   <!--pai-->
+                    <img src="imagem\logo.png" alt="Logo da Candleaf na cor azul claro e um símbolo de uma vela acessa">
+                </figure>                 
+                <!-- menu -->
+                <ul class="menu">  <!--flex sequencia paginas cadastro pagament-->
+                    <li class="menu-art"><a>Cart</a></li>
+                    <li>></li>
+                    <li class="menu-art"><a>Details</a></li>
+                    <li>></li>
+                    <li class="menu-art"><a>Shipping</a></li>
+                    <li>></li>
+                    <li class="menu-art destaque-1"><a>Payment</a></li>
+                </ul>
+                     <!-- ate aqui o menu    -->
+                <form action="" method="post" class="contact">
+                    <article class="ent ent-linha">
+                        <label for="email">Contact</label>
+                        <input type="email" id="email" name="email" placeholder="joe.spagnuolo@uxbly.com" required autofocus>
+                        <a>Edit</a>
+                    </article>
+                    <article class="ent ent-linha">
+                        <label for="shipTo">Ship to</label>
+                        <input type="text" id="shipTo" name="shipTo" placeholder="Via Firenze 23, 92023, Campobello di  Licata AG, Italia" required>
+                        <a>Edit</a>
+                    </article>
+                    <article class="ent ent-lin">
+                        <label for="method">Method</label>
+                        <input type="text" id="method" name="method" placeholder="Method Standard Shipping - FREE" required>
+                        <a>Edit</a> 
+                    </article>                   
+                </form>
+                <h4>Payment method</h4>
+                <form action="" method="post" class="payment">
+                    <article class="check-green">
+                        <article>
+                            <p class="check-sub"></p>
+                            <p class="check-inf"></p>
+                            <p class="check-bol"></p>
+                        </article>
+                        <p>Credit Card</p>
+                    </article>
+                    <article class="check-loc">
+                        <input type="text" id="card" name="card" placeholder="Card Number" required>
+                        <i class="bi bi-lock-fill"></i>
+                    </article>
+                    <article class="check-hol">
+                        <input type="text" id="holder" name="holder" placeholder="Holder Name" required>
+                    </article>
+                    <article class="check-exp">
+                        <input type="text" id="date" name="date" placeholder="Expiration (MM/YY)" required> <!--tem um padding a mais-->
+                        <article class="check-cvv">
+                            <input type="text" id="num" name="num" placeholder="CVV">
+                            <i class="bi bi-info-square-fill" required></i>
+                        </article>
+                    </article>                    
+                </form>
+                <h4 class="shipp-tax">Tax Informations</h4>
+                <form action="" method="post">
+                    <article class="tax tax1">
+                        <input type="text" id="vat" name="vat" placeholder="VAT number  (optional)">
+                    </article>
+                    <article class="tax">
+                        <input type="text" id="pec" name="pec"  placeholder="PEC (optional)">
+                    </article>
+                </form>
+                <h4 class="shipp-tax">Billing address</h4>
+                <form action="" method="post" class="tax shipp-esp">
+                    <article class="shipAdd-1">
+                        <input type="radio" id="shipAdd" name="address" value="address">
+                        <label for="shipAdd">Same as the shipping address</label>
+                    </article>
+                    <article class="shipAdd-0"></article>
+                    <article class="shipAdd-2">
+                        <input type="radio" id="bill" name="address" value="address">
+                        <label for="bill">Use a different address for billing</label>
+                    </article>
+                </form>
+                <article class="goPay">
+                    <button><a href="thanks.html">Pay now</a></button>
+                    <h4><a href="shipping.html">Back to shipping</a></h4>
+                </article>
+            </section>
+            <!-- folha lateral -->
+            <aside>
+                <section class="heat">
+                    <figure>
+                        <img src="imagem\cart-mind.png" alt="fragancia spyced mint" width="100%">
+                    </figure>
+                    <!-- <i class="bi bi-1-circle-fill"></i> -->
+                    <article class="heat-text">
+                        <p>Spiced Mint Candleaf®</p>
+                        <p>$ 9.99</p>
+                    </article>
+                </section>
+                <form class="coupon-code" >
+                    <input type="text" id="coupon" name="coupon" value="Coupon code" placeholder="Coupon code">
+                    <button><a>Add code</a></button>
+                </form>
+                <section class="finish">
+                    <article class="subtotal">
+                        <p>Subtotal</p>
+                        <p class="total-aut">$  9.99</p>
+                    </article>
+                    <article class="free">
+                        <p>Shipping</p>
+                        <p class="total-aut">Free Shopping</p>
+                    </article>
+                    <article class="total">
+                        <p>Total</p>
+                        <p class="total-aut">$ 9.99</p>
+                    </article>
+                </section>
+            </aside>
+        </main>
+    </body>
+</html>

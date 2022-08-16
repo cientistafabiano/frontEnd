@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="E-commerce">
+        <meta name="robots" content="index,follow">
+        <meta name="rating" content="general">
+        <link rel="icon" href="imagem\favicon.png">
+        <title>E-Commerce CodeBlue</title>
+        
+        <!-- icon do bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- icon hamburguer -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- nosso css -->
+        <link rel="stylesheet" href="payment.css"> 
+    </head>
+    <body>
+        <main>
+            <!-- banner  
+            <article class="banner">
+                <i class="bi bi-cart3"></i>
+                <p>See  your order details</p>
+                <h4>$ 9.99</h4>
+            </article>-->
+            <section class="topo container auth"> <!-- vô -->
+                <!-- logo -->
+                <figure>   <!--pai-->
+                    <img src="imagem\logo.png" alt="Logo da Candleaf na cor azul claro e um símbolo de uma vela acessa">
+                </figure>  
+                <!-- menu -->
+                <ul class="menu">  <!--flex sequencia paginas cadastro pagament-->
+                    <li class="menu-art"><a>Cart</a></li>
+                    <li>></li>
+                    <li class="menu-art destaque-1"><a>Details</a></li>
+                    <li>></li>
+                    <li class="menu-art destaque-2"><a>Shipping</a></li>
+                    <li>></li>
+                    <li class="menu-art destaque-2"><a>Payment</a></li>
+                </ul>
+                     <!-- ate aqui o menu    -->
+
+
+                <form action="" method="post" class="aut">
+                    <article class="aut-login">
+                        <h4>Contact</h4>
+                        <p>Do you have an account?  <span>Login</span></p>
+                    </article>                
+                    <input type="text" id="account" name="contact" placeholder="Email or mobile phone number" required autofocus>
+                    <input type="checkbox" id="discount" name="discount" value="Add me to Candleaf newsletter for a 10% discount">
+                    <label for="discount">Add me to Candleaf newsletter for a 10% discount</label>
+                </form>
+                <h4 class="aut-h4">Shipping Address</h4> <!--arrumar o margin botton-->
+                <form  action="" method="post" class="aut">
+                    <article class="aut-name">  <!--talvez essa classe nao precise mais-->
+                        <input type="text" id="nome" name="nome" placeholder="Name" required>
+                        <input type="text" id="sobnome" name="sobnome" placeholder="Second Name" required>
+                    </article>
+                    <input type="text" id="add" name="add" placeholder="Address and number" required>
+                    <input type="text" id="ship" name="ship" placeholder="Shipping note (optional)">
+                    <article class="aut-postal">
+                        <input type="text" id="city" name="city" placeholder="City" required>
+                        <input type="text" id="postal" name="postal" placeholder="Postal Code" required>
+                        <select id="province" name="province" value="province">
+                            <option value="province"><p></p></option>
+                            <option value="province"><p>Napoli</p></option>
+                            <option value="province"><p>Paris</p></option>
+                            <option value="province"><p>Barcelona</p></option>
+                        </select>
+                    </article>
+                    <select id="country" name="country" value="country">
+                        <option value="Country/Region"><p>Italy</p></option>
+                        <option value="Country/Region"><p>France</p></option>
+                        <option value="Country/Region"><p>Spanish</p></option>
+                    </select>
+                    <input type="checkbox" id="saveTo" name="saveTo" value="saveTo" placeholder="Save this informations for a future fast checkout">
+                    <label for="saveTo">Save this informations for a future fast checkout</label>
+                </form>
+                <article  class="goPay-2">
+                    <button><a href="shipping.html">Go to shipping</a></button>
+                    <h4><a href="cart.html">Back to cart</a></h4> 
+                </article>
+            </section>
+            <!-- folha lateral -->
+            <aside>
+                <section class="heat">
+                    <figure>
+                        <img src="imagem\cart-mind.png" alt="fragancia spyced mint" width="100%">
+                    </figure>
+                    <!-- <i class="bi bi-1-circle-fill"></i> -->
+                    <article class="heat-text">
+                        <p>Spiced Mint Candleaf®</p>
+                        <p>$ 9.99</p>
+                    </article>
+                </section>
+                <form class="coupon-code" >
+                    <input type="text" id="coupon" name="coupon" value="Coupon code" placeholder="Coupon code">
+                    <button><a>Add code</a></button>
+                </form>
+                <section class="finish">
+                    <article class="subtotal">
+                        <p>Subtotal</p>
+                        <p class="total-aut">$  9.99</p>
+                    </article>
+                    <article class="free">
+                        <p>Shipping</p>
+                        <p>Free Shipping</p>
+                    </article>
+                    <article class="total">
+                        <p>Total</p>
+                        <p class="total-aut">$ 9.99</p>
+                    </article>
+                </section>
+            </aside>
+        </main>
+    </body>
+</html>

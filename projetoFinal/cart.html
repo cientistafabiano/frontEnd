@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="E-commerce">
+        <meta name="robots" content="index,follow">
+        <meta name="rating" content="general">
+        <link rel="icon" href="imagem\favicon.png">
+        <title>E-Commerce CodeBlue</title>
+        
+        <!-- icon do bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- icon hamburguer -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- nosso css -->
+        <link rel="stylesheet" href="style-1.css"> 
+    </head>
+    <body>
+        <header class="container">                  
+            <nav>
+                <article class="hamburguer">
+                    <a href="#" class="hamburguer" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </article>
+                <figure>
+                    <img src="imagem\logo.png" alt="Logo da Candleaf na cor azul claro e um símbolo de uma vela acessa">
+                </figure>            
+                <ul class="col-6">
+                    <li>
+                        <p><a href="#">Discovery</a></p>
+                        <ul>
+                            <li><a href="">Spiced</a></li>
+                            <li><a href="">Sweet</a></li>
+                            <li><a href="">Cool</a></li>
+                            <li><a href="">Juicy</a></li>                        
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contactus</a>
+                    </li>
+                 </ul>
+                <ul class="icon">
+                    <li><a><i class="bi bi-person"></i></a></li>
+                    <li><a><i class="bi bi-cart3"></i></a></li>
+                </ul>        
+            </nav>     
+        </header>
+        <main class="cart-back">
+            <h4 >Your cart items</h4>
+            <p><a href="home.html">Back to shopping</a></p>
+
+            <section class="table-1">
+                <ul> <!--recebe flex-->
+                    <li>Product</li>  <!--col-50%-->
+                    <li class="col-2">Price</li> 
+                    <li class="col-2">Quantity</li>
+                    <li class="col-2">Total</li>
+                    <!-- colocar um border bottom -->
+                </ul>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="imagem\cart-mind.png" alt="Fragant Spiced mint" loading="lazy" width="160px">
+                        </figure>
+                        <article class="remove">
+                            <h3>Spiced Mint Candleaf®</h3>
+                            <p><a>Remove</a></p>
+                        </article>
+                        <!-- mudar a classe -->
+                        <ol class="table-1a"> <!--so existe no mobile-->
+                            <li>$9.99</li>
+                            <li>Quantity</li>
+                            <li>- <span>1</span> +</li>
+                        </ol>
+                    </li>
+                    <li>$ 9.99</li>
+                    <li class="quant">- <span>1</span> +</li>
+                    <li>$ 9.99</li>
+                    <!-- colocar um border bottom -->
+                </ul>
+            </section>
+
+            <section class="table-1a container"> <!--so existe no mobile-->
+                <ul> <!--recebe flex-->
+                    <li>Product</li>  <!--col-50%-->
+                    <li>Price</li>     <!--space-between-->
+                </ul>
+                <ul>
+                    <li>
+                        <figure class="col-4">
+                            <img src="imagem\cart-mind.png" alt="Fragant Spiced mint" loading="lazy" width="160px">
+                        </figure>
+                        <article class="remove col-4">
+                            <h3>Spiced Mint Candleaf®</h3>
+                            <p><a>Remove</a></p>
+                        </article>
+                        <ol class="quantity col-4">
+                            <li>$9.99</li>
+                            <li class="q">Quantity</li>
+                            <li class="quant">- <span>1</span> +</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+            <section class="table-2 container">   <!--flex-->
+                <section>
+                    <article>   <!--flex-->
+                        <p>Sub-total</p>
+                        <p>$ 9.99</p>
+                    </article>
+                    <article>
+                        Tax and shipping cost will be calculated later
+                    </article>
+                </section>
+               <button><a href="authentication.html">Check-out</a></button>
+            </section>
+        </main>
+        <footer>
+            <section class="container">
+                <section class="foot">
+                    <article>
+                        <figure>
+                            <img src="imagem\footerlogo.png" alt="logo candleaf">
+                        </figure>
+                        <p>Your natural candle made for your home and for your wellness.</p>
+                    </article>
+                    <article>
+                        <ul>
+                            <span><li>Discovery</li></span>
+                            <li>New season</li>
+                            <li>Most searched</li>
+                            <li>Most selled</li>
+                        </ul>
+                        <ul class="info">
+                            <span><li>Info</li></span>
+                            <li>Contact us</li>
+                            <li>Privacy Policies</li>
+                            <li>Terms & Conditions</li>
+                        </ul>
+                        <ul>
+                            <span><li>About</li></span>
+                            <li>Help</li>
+                            <li>Shipping</li>
+                            <li>Affiliate</li>
+                        </ul>
+                    </article>
+                </section>
+            </section>
+            <div class="ffoot">
+                <div class="container">
+                    <section>
+                        <article>©Candleaf All Rights Reserved.</article>
+                        <article>
+                            <p>Designed with</p>
+                            <p class="heart"></p>
+                            <p>by uxbly</p>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </footer>
+
+        <!-- chamando a biblioteca jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+             <!-- nosso js -->
+        <script src="final.js"></script>
+    </body>
+</html>
